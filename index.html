@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Vjezba 4.2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        .content-box::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .content-box {
+            margin: 0 auto;
+            margin-bottom: 8px;
+            width: 600px;
+            border: 1px dotted black;
+        }
+        .content-box .content-box__aside {
+            width: 100px;
+            float: left;
+        }
+        .content-box .content-box__title {
+            margin-top: 8px;
+            margin-bottom: 4px;
+
+        }
+        .content-box .content-box__content {
+            margin-top: 0px;
+            margin-bottom: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <img src="./media/circle1.jpg" alt="canyon" class="content-box__aside">
+        <h3 class="content-box__title">Slika 1</h3>
+        <p class="content-box__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dignissimos, vero consequatur corrupti eaque nisi eum amet, delectus sit qui non officiis at veniam distinctio dolores nemo ea fugiat perspiciatis.</p>
+    </div>
+    <div class="content-box">
+        <img src="./media/circle2.jpg" alt="canyon" class="content-box__aside">
+        <h3 class="content-box__title">Slika 2</h3>
+        <p class="content-box__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus dignissimos, vero consequatur corrupti eaque nisi eum amet, delectus sit qui non officiis at veniam distinctio dolores nemo ea fugiat perspiciatis.</p>
+    </div>
+</body>
+</html>
